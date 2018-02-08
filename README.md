@@ -28,4 +28,12 @@ or
 $ make cross-build
 ```
 
-## Setting
+## Use
+
+```
+$ ./bin/misudo -p 8080
+$ curl localhost:8080/ping
+Pong
+$ curl -XPOST -F output="response" -F w=300 -F file=@example/yagi.jpg localhost:8080/resize > example/yagi_resize.jpg
+$ open example/yagi_resize.jpg
+```

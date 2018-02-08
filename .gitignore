@@ -23,6 +23,7 @@ vendor
 # app
 data/*
 tmp/*
+example/yagi_resize.jpg
 
 # gitkeep
 !.gitkeep
