@@ -1,0 +1,3 @@
+package: github.com/a4t/misudo
+import:
+- package: github.com/nfnt/resize

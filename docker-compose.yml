@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  golang:
+    build: .
+    volumes:
+      - ./:/go/src/app
+    working_dir: /go/src/app
+    ports:
+      - "58081:5000"
+    command: go run main.go
+
+volumes:
+  data:
+    driver: 'local'

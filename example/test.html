@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File uploader</title>
+</head>
+<body>
+<form method="post" action="http://localhost:8080/resize" enctype="multipart/form-data">
+  <input type="file" name="file" />
+  <input type="hidden" name="w" value="300" />
+  <input type="hidden" name="mode" value="png" />
+  <input type="hidden" name="output" value="file" />
+  <input type="submit" name="hoge">
+</form>
+</body>
+</html>

@@ -1,0 +1,8 @@
+hash: 6d5cf7913102c532de11aa4a3dccd6d465afab5cdac3e0e56c34c21860ee13d1
+updated: 2018-02-01T20:29:02.346188+09:00
+imports:
+- name: github.com/julienschmidt/httprouter
+  version: e1b9828bc9e5904baec057a154c09ca40fe7fae0
+- name: github.com/nfnt/resize
+  version: 891127d8d1b52734debe1b3c3d7e747502b6c366
+testImports: []
