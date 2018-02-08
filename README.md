@@ -1,3 +1,5 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/ad8dba8eeb423f1c7b3f/maintainability)](https://codeclimate.com/github/a4t/misudo/maintainability)
+
 # misudo
 
 Misudo is image uploader
