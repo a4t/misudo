@@ -15,7 +15,7 @@ type Response struct {
 func Resize(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	r.ParseForm()
 	imgSource := ImgSource{}
-	imgSource.getSource(r)
+	imgSource.setSource(r)
 
 	decoder := Decoder{
 		Raw:    imgSource.Raw,
@@ -24,7 +24,7 @@ func Resize(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
 	img := decoder.decode()
 
 	resizer := Resizer{Source: img}
-	resizer.getResizeImageSize(r)
+	resizer.setResizeImageSize(r, imgSource)
 	resizer.make()
 
 	if r.Form["output"][0] == "file" {
