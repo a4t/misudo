@@ -15,9 +15,17 @@ type Resizer struct {
 	Dist   image.Image
 }
 
-func (d *Resizer) getResizeImageSize(r *http.Request) {
+func (d *Resizer) setResizeImageSize(r *http.Request, i ImgSource) {
 	d.Width = d.getResizeParam(r.Form["w"])
 	d.Height = d.getResizeParam(r.Form["h"])
+
+	if uint(i.Width) < d.Width {
+		d.Width = uint(i.Width)
+	}
+
+	if uint(i.Height) < d.Height {
+		d.Height = uint(i.Height)
+	}
 }
 
 func (d Resizer) getResizeParam(p []string) uint {
